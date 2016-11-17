@@ -1,0 +1,104 @@
+/* border-sizing */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* common elements */
+html, 
+body, 
+section, 
+.container {
+  height: 100vh;
+  margin: 0;
+  width: 100%;
+}
+
+body {
+  padding-top: 50px;
+}
+
+header, aside, section {
+  margin: 0;
+  text-align: center;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+#search-area {
+  margin-bottom: 0.5em;
+}
+
+#places-list {
+  padding: 0;
+}
+
+#places-list li {
+  display: inline-block;
+  list-style-type: none;
+  font-size: 18px;
+  padding: 8px;
+  background: #222222;
+  color: #9d9d9d;
+  margin-bottom: 8px;
+}
+
+#places-list li:hover {
+  cursor: pointer;
+  color: #fff;
+  background: gray;
+}
+
+#map {
+  height: 100%;
+  width: 100%;
+}
+
+figure {
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+figure img {
+  width: 75%;
+  height: auto;
+}
+
+figcaption {
+  font-size: 1.2em;
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    margin-top: 0.7em;
+  }
+
+  .introduction {
+    display: none;
+  }
+
+  aside {
+    height: 20vh;
+    overflow: auto;
+  }
+
+  #places-list li {
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+
+  #map {
+    height: 60vh;
+    margin-top: 0.5em;
+  }
+  
+  figure img {
+    width: 100%;
+    height: auto;
+  }
+}
