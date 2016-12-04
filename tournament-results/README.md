@@ -29,4 +29,4 @@ vagrant@vagrant-ubuntu-trusty-32:/vagrant/tournament$ python tournament_test.py
 6. Newly registered players appear in the standings with no matches.
 7. After a match, players have updated standings.
 8. After one match, players with one win are paired.
-Success!  All tests pass!
+Success!  All tests pass.
